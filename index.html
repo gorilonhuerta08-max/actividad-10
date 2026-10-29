@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Ejercicios en JavaScript</title>
+</head>
+<body>
+    <h1>Guía de Ejercicios en JavaScript</h1>
+    <p>Abre la consola de tu navegador (F12) para ver los resultados de los ejercicios.</p>
+
+    <script>
+
+        let nombreE1 = "Maria";
+        console.log(`¡Hola, ${nombreE1}!`);
+
+        let aE2 = 3, bE2 = 5;
+        console.log(aE2 + bE2);
+        let nombreE3 = "Maria", edadE3 = 15, estaturaE3 = 1.65;
+        console.log(`${nombreE3} tiene ${edadE3} años y mide ${estaturaE3}`);
+
+        let baseE4 = 10, alturaE4 = 5;
+        console.log((baseE4 * alturaE4) / 2);
+
+        let largoE5 = 5, anchoE5 = 3;
+        let perimetro = 2 * (largoE5 + anchoE5);
+        let area = largoE5 * anchoE5;
+        console.log(`Perímetro: ${perimetro}`);
+        console.log(`Área: ${area}`);
+
+        let horasE6 = 2, minutosE6 = 30;
+        let minutosTotales = (horasE6 * 60) + minutosE6;
+        console.log(minutosTotales);
+
+        let celsiusE7 = 0;
+        let fahrenheit = (celsiusE7 * 9 / 5) + 32;
+        console.log(fahrenheit);
+
+        let numeroE8 = 15;
+        console.log(numeroE8 % 7);
+        let aE9 = 5, bE9 = 10;
+        let temp = aE9;
+        aE9 = bE9;
+        bE9 = temp;
+        console.log(`a=${aE9} b=${bE9}`);
+
+
+        let montoE10 = 1760;
+        let m500 = Math.floor(montoE10 / 500);
+        montoE10 %= 500;
+
+        let m100 = Math.floor(montoE10 / 100);
+        montoE10 %= 100;
+
+        let m50 = Math.floor(montoE10 / 50);
+        montoE10 %= 50;
+
+        let m10 = Math.floor(montoE10 / 10);
+        console.log(`500:${m500} 100:${m100} 50:${m50} 10:${m10}`)
+
+        let edadE11 = 20;
+        if (edadE11 >= 18) {
+            console.log("Mayor de edad");
+        } else {
+            console.log("Menor de edad");
+        }
+
+        let numeroE12 = 4;
+        if (numeroE12 % 2 === 0) {
+            console.log("Par");
+        } else {
+            console.log("Impar");
+        }
+
+        let numeroE13 = 5;
+        if (numeroE13 > 0) {
+            console.log("Positivo");
+        } else if (numeroE13 < 0) {
+            console.log("Negativo");
+        } else {
+            console.log("Cero");
+        }
+
+        let aE14 = 5, bE14 = 3;
+        if (aE14 > bE14) {
+            console.log(aE14);
+        } else {
+            console.log(bE14);
+        }
+
+        let edadE15 = 15;
+        if (edadE15 >= 13 && edadE15 <= 19) {
+            console.log("Adolescente");
+        } else {
+            console.log("No adolescente");
+        }
+
+        let temperaturaE16 = 5;
+        if (temperaturaE16 < 10) {
+            console.log("Frío");
+        } else if (temperaturaE16 <= 25) {
+            console.log("Agradable");
+        } else {
+            console.log("Calor");
+        }
+
+
+        let aE17 = 3, bE17 = 4, cE17 = 5;
+        if ((aE17 < bE17 + cE17) && (bE17 < aE17 + cE17) && (cE17 < aE17 + bE17)) {
+            console.log("Válido");
+        } else {
+            console.log("No válido");
+        }
+
+        // E18. Mayor de 3 números
+        let aE18 = 5, bE18 = 3, cE18 = 8;
+        if (aE18 >= bE18 && aE18 >= cE18) {
+            console.log(aE18);
+        } else if (bE18 >= aE18 && bE18 >= cE18) {
+            console.log(bE18);
+        } else {
+            console.log(cE18);
+        }
+    </script>
+</body>
+</html>
